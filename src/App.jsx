@@ -3,6 +3,7 @@ import MusicPlayerSlider from "./components/Musicplayer.jsx";
 import { Avatar } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import { FaSnapchatGhost } from "react-icons/fa";
 
 function App() {
   return (
@@ -35,6 +36,17 @@ function App() {
             >
               <InstagramIcon aria-hidden="true" fontSize="medium" />
               <span className="sr-only">Instagram</span>
+            </a>
+
+            <a
+              className="social-btn social-btn--snapchat"
+              href="https://www.snapchat.com/add/black_wither80"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Snapchat (Opens in new tab)"
+            >
+              <FaSnapchatGhost aria-hidden="true" fontSize="1.3rem" />
+              <span className="sr-only">Snapchat</span>
             </a>
           </div>
         </div>
