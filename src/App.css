@@ -40,3 +40,13 @@
 .read-the-docs {
   color: #888;
 }
+
+.music-player-container {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  z-index: 1000;
+  max-width: calc(100% - 2rem);
+  width: auto;
+  pointer-events: auto;
+}
