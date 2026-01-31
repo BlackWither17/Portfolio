@@ -1,34 +1,44 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import MusicPlayerSlider from "./components/Musicplayer.jsx";
+import { Avatar } from "@mui/material";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import InstagramIcon from "@mui/icons-material/Instagram";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className="avatar-container">
+        <Avatar alt="Black_Wither" src="/static/images/logo-halloween.png" className="avatar" sx={{
+          width: "6em",
+          height: "6em"
+        }} />
+        <div className="identity">
+          <h1>Black_Wither</h1>
+          <div className="social-media">
+            <a
+              className="social-btn social-btn--github"
+              href="https://github.com/BlackWither17"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub (Opens in new tab)"
+            >
+              <GitHubIcon aria-hidden="true" fontSize="medium" />
+              <span className="sr-only">GitHub</span>
+            </a>
+
+            <a
+              className="social-btn social-btn--instagram"
+              href="https://instagram.com/Black_Wither17"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram (Opens in new tab)"
+            >
+              <InstagramIcon aria-hidden="true" fontSize="medium" />
+              <span className="sr-only">Instagram</span>
+            </a>
+          </div>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
       <div className="music-player-container">
         <MusicPlayerSlider />
       </div>

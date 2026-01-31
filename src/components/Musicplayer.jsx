@@ -63,7 +63,7 @@ export default function MusicPlayerSlider() {
                     <CoverImage>
                         <img
                             alt="Hotline Bling - Gibran Alcocer"
-                            src="/hotline-bling.png"
+                            src="/static/images/hotline-bling.png"
                         />
                     </CoverImage>
                     <Box sx={{ ml: 1.5, minWidth: 0 }}>
