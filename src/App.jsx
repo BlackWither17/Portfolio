@@ -1,5 +1,6 @@
 import './App.css'
 import MusicPlayerSlider from "./components/Musicplayer.jsx";
+import ProjectCards from "./components/ProjectCards.jsx";
 import { Avatar } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -62,6 +63,7 @@ function App() {
           </div>
         </div>
       </div>
+      <ProjectCards />
       <div className="music-player-container">
         <MusicPlayerSlider />
       </div>
