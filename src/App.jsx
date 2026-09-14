@@ -1,4 +1,5 @@
 import './App.css'
+import { Link } from "react-router-dom";
 import MusicPlayerSlider from "./components/Musicplayer.jsx";
 import ProjectCards from "./components/ProjectCards.jsx";
 import { Avatar } from "@mui/material";
@@ -64,6 +65,13 @@ function App() {
         </div>
       </div>
       <ProjectCards />
+      <Link to="/leo-crew" className="leo-crew-teaser">
+        <img src="/static/images/leo/leo-original.png" alt="" aria-hidden="true" />
+        <span className="leo-crew-teaser-text">
+          <strong>The Leo Crew</strong>
+          <small>Every version of my friend Leo, and how each one happened →</small>
+        </span>
+      </Link>
       <div className="music-player-container">
         <MusicPlayerSlider />
       </div>
